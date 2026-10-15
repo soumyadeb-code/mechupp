@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Montserrat", sans-serif;
+  --font-body: "Montserrat", sans-serif;
+  --font-sans: "Montserrat", sans-serif;
+}
+
+:root {
+  --radius: 0.75rem;
+  --background: #0d0f14;
+  --foreground: #ffffff;
+  --card: #161922;
+  --card-foreground: #ffffff;
+  --primary: #eb5f0d;
+  --primary-hover: #d05008;
+  --secondary: #8695a8;
+  --muted: #868687;
+  --border: rgba(134, 149, 168, 0.2);
+  --ring: #eb5f0d;
+}
+
+* {
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
+}
+
+.font-display {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.poster-grain {
+  background-image:
+    radial-gradient(ellipse 80% 50% at 50% 0%, rgba(235, 95, 13, 0.22), transparent),
+    linear-gradient(180deg, #161922 0%, #0d0f14 100%);
+}
+
+.glow-orange {
+  box-shadow: 0 10px 30px -5px rgba(235, 95, 13, 0.4);
+}
+
+.border-accent {
+  border-color: rgba(134, 149, 168, 0.25);
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
